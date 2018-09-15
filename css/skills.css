@@ -1,0 +1,250 @@
+header {
+  height: 250px;
+  color: #FFFFFF;
+  line-height: 60px;
+  background: url(../img/bg.jpg) no-repeat top;
+  background-size: cover;
+}
+header .row {
+  margin-top: 30px;
+}
+header p {
+  font-size: 40px;
+  font-style: italic;
+}
+header p:hover {
+  transform-origin: left;
+  color: #4378ff;
+  transform: scale(1.1);
+}
+header .header_top {
+  height: 60px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  header .header_top {
+    margin-bottom: 30px;
+  }
+}
+header .header_logo a {
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px dashed transparent;
+  margin-right: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+header .header_logo a:hover {
+  border-radius: 50%;
+  border: 1px dashed #FFFFFF;
+}
+header .header_logo a:last-child {
+  margin-right: 100px;
+}
+header .dropdown div {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+header .dropdown div span {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #FFFFFF;
+}
+header .dropdown div span:nth-child(1) {
+  top: 0;
+}
+header .dropdown div span:nth-child(2) {
+  top: 20px;
+}
+header .dropdown div span:nth-child(3) {
+  top: 40px;
+}
+header .dropdown div.nav_active span {
+  background-color: #4378ff;
+}
+header .dropdown div.nav_active span:nth-child(1) {
+  transform: rotate(315deg);
+  top: 20px;
+}
+header .dropdown div.nav_active span:nth-child(2) {
+  opacity: 0;
+}
+header .dropdown div.nav_active span:nth-child(3) {
+  transform: rotate(225deg);
+  top: 20px;
+}
+header .dropdown ul {
+  width: 250px;
+  height: 340px;
+  text-align: center;
+  padding: 30px 0;
+}
+header .dropdown ul a {
+  text-decoration: none;
+}
+header .dropdown ul li {
+  position: relative;
+  line-height: 50px;
+  color: #CCCCCC;
+  transition: 0.5s;
+}
+header .dropdown ul span,
+header .dropdown ul s {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 1px;
+  background: cornflowerblue;
+  transition: 0.5s linear;
+}
+header .dropdown ul s {
+  top: 12px;
+  left: 42%;
+}
+header .dropdown ul span {
+  bottom: 12px;
+  right: 42%;
+}
+header .dropdown ul li.nav_active {
+  color: dodgerblue;
+  transform: scale(1.3);
+}
+header .dropdown ul li.nav_active span,
+header .dropdown ul li.nav_active s {
+  width: 66px;
+}
+header .dropdown ul li:hover {
+  color: dodgerblue;
+  transform: scale(1.3);
+}
+header .dropdown ul li:hover span,
+header .dropdown ul li:hover s {
+  width: 66px;
+}
+header .inf {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+}
+header .inf:hover {
+  transform-origin: left;
+  color: #4378ff;
+  transform: scale(1.1);
+}
+section h2 {
+  color: #FFFFFF;
+  line-height: 90px;
+  background: #000000;
+  margin: -45px auto 0;
+  width: 250px;
+  text-align: center;
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-style: oblique;
+}
+section h5 {
+  line-height: 30px;
+  color: #777;
+  text-indent: 2em;
+  margin-bottom: 40px;
+  transform-origin: left;
+}
+section h5:hover {
+  color: #4378ff;
+}
+section h3 {
+  color: #4378ff;
+  letter-spacing: 4px;
+}
+section ul {
+  list-style: none;
+}
+section ul li {
+  color: #777;
+  height: 30px;
+}
+section ul li:hover {
+  transform-origin: left;
+  transform: scale(1.1);
+  color: #4378ff;
+}
+section ol {
+  list-style: none;
+}
+section ol li {
+  position: relative;
+  margin-bottom: 30px;
+}
+section ol li h4 {
+  color: #FFFFFF;
+  line-height: 36px;
+  width: 100px;
+  padding-left: 14px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+}
+section ol li .progress {
+  height: 36px;
+}
+section ol li .progress .progress-bar {
+  text-align: right;
+  font-size: 16px;
+  line-height: 36px;
+  color: #000000;
+}
+section .skills_list {
+  margin: 80px 0;
+  padding: 0;
+  text-align: center;
+  background: url(../img/bg.jpg) no-repeat top fixed;
+  background-size: cover;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+section .skills_list .skills_mark {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
+}
+section .skills_list .skills_mark div {
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+section .skills_list .skills_mark div:hover {
+  border: 1px solid #4378ff;
+  color: #4378ff;
+}
+section .skills_list .skills_mark div:hover P {
+  color: #FFFFFF;
+}
+section .skills_list p {
+  color: #4378ff;
+  font-size: 36px;
+}
+section .skills_list span {
+  display: block;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 480px) {
+  section .skills_list p {
+    font-size: 24px;
+  }
+}
+footer {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #000000;
+  color: #FFFFFF;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
