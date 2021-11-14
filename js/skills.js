@@ -3,21 +3,29 @@ $(function() {
 	var num2 = 0;
 	var num3 = 0;
 	var num4 = 0;
+	var num5 = 0;
+	var num6 = 0;
 	var timer;
 	timer = setInterval(function() {
-		if(num1 < 90) {
-			num1 += 90 / 60;
-			num2 += 92 / 60;
-			num3 += 83 / 60;
-			num4 += 86 / 60;
+		if(num1 < 80) {
+			num1 += 80 / 100;
+			num2 += 85 / 100;
+			num3 += 75 / 100;
+			num4 += 85 / 100;
+			num5 += 75 / 100;
+			num6 += 80 / 100;
 			$('.progress-bar').eq(0).css("width", "" + num1 + "%");
 			$('.progress-bar').eq(1).css("width", "" + num2 + "%");
 			$('.progress-bar').eq(2).css("width", "" + num3 + "%");
 			$('.progress-bar').eq(3).css("width", "" + num4 + "%");
+			$('.progress-bar').eq(4).css("width", "" + num5 + "%");
+			$('.progress-bar').eq(5).css("width", "" + num6 + "%");
 			$('.progress-bar').eq(0).html('' + parseInt(num1) + '%');
 			$('.progress-bar').eq(1).html('' + parseInt(num2) + '%');
 			$('.progress-bar').eq(2).html('' + parseInt(num3) + '%');
 			$('.progress-bar').eq(3).html('' + parseInt(num4) + '%');
+			$('.progress-bar').eq(4).html('' + parseInt(num5) + '%');
+			$('.progress-bar').eq(5).html('' + parseInt(num6) + '%');
 		} else {
 			clearInterval(timer)
 		}
